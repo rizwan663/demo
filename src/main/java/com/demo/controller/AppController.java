@@ -1,5 +1,12 @@
 package com.demo.controller;
 
-public class AppController {
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
+public class AppController {
+	@GetMapping("/Message")
+public String getMessage() {
+	return "Welcome";
+}
 }
